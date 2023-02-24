@@ -1,19 +1,7 @@
 import os
 import openai
 from flask import Flask, render_template, request
-'''
 
-@app.route('/process_text', methods=['POST'])
-def c():
-    input_text = request.form['input_text']
-    # Process the input text in some way
-    output_text = input_text.upper()
-    return output_text
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-'''
 app = Flask(__name__)
 
 @app.route('/process_text', methods=['POST'])
@@ -26,7 +14,7 @@ def process_text():
     try:
         response = openai.Completion.create(
           model="text-davinci-003",
-          prompt=f"Correct this formal English: {input_text}",
+          prompt=f"Correct this to formal English: {input_text}",
           temperature=0,
           max_tokens=60,
           top_p=1.0,
