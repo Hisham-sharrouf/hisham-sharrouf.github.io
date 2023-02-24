@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Grammer checking</title>
+    <title>My Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#input_text').on('input', function() {
+          var input_text = $(this).val();
+          $.ajax({
+            url: '/process_text',
+            method: 'POST',
+            data: { input_text: input_text },
+            success: function(output_text) {
+              $('#output_text').text(output_text);
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body>
-    <h1>Enter your English text:</h1>
-    <form method="POST">
-      <input type="text" name="input_text">
-      <button type="submit">Submit</button>
-    </form>
-    
-    <h2>Result:</h2>
-    <p>{{ output_text }}</p>
-    
+    <h1>Enter some text:</h1>
+    <input type="text" id="input_text">
+    <div id="output_text"></div>
   </body>
 </html>
