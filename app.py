@@ -32,7 +32,8 @@ def process_text():
             print(f'Request error: {e}')
             raise
 
-    output_text = response['choices'][-1]['text']
+    #output_text = response['choices'][-1]['text']
+    output_text = "hii"
     return output_text
 
 
