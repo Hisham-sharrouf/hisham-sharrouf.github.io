@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Page</title>
+    <title>Grammer checking</title>
   </head>
   <body>
-    <label for="myInput">Enter some text:</label>
-    <input type="text" id="myInput" name="myInput">
+    <h1>Enter your English text:</h1>
+    <form method="POST">
+      <input type="text" name="input_text">
+      <button type="submit">Submit</button>
+    </form>
+    {% if output_text %}
+    <h2>Result:</h2>
+    <p>{{ output_text }}</p>
+    {% endif %}
   </body>
 </html>
