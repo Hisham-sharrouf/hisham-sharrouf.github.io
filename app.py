@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
     key = 'sk-openailczUHLXxpLnaSVkDTZKwT3BlbkFJ6hLt70qy4mnDNHDXugxs'
     openai.api_key = key
-    if request.method == 'POST':
+    if 1 == 1':
         input_text = request.form['input_text']
         # Process the input text in some way
         try:
