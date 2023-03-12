@@ -1,40 +1,35 @@
 import os
 import openai
 from flask import Flask, render_template, request
+import time
 
 app = Flask(__name__)
 
-@app.route('/process_text', methods=['POST'])
+@app.route('/', methods=['GET', 'POST'])
 def process_text():
-    key = 'sk-openailczUHLXxpLnaSVkDTZKwT3BlbkFJ6hLt70qy4mnDNHDXugxs'
-    openai.api_key = key
+    if request.method == 'POST':
+        key = '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'
+        openai.api_key = key
+        input_text = request.form['input_text']
+        try:
+            response = openai.Completion.create(
+                model="text-davinci-003",
+                prompt=f"Correct this to formal English: {input_text}",
+                temperature=0,
+                max_tokens=60,
+                top_p=1.0,
+                frequency_penalty=0.0,
+                presence_penalty=0.0
+            )
+            output_text = response['choices'][-1]['text']
+        except openai.error.APIError as e:
+            error_message = str(e)
+            return render_template('index.html', error_message=error_message)
+        
+        return render_template('index.html', output_text=output_text)
+    
+    return render_template('index.html')
 
-    input_text = request.form['input_text']
-    # Process the input text in some way
-    try:
-        response = openai.Completion.create(
-          model="text-davinci-003",
-          prompt=f"Correct this to formal English: {input_text}",
-          temperature=0,
-          max_tokens=60,
-          top_p=1.0,
-          frequency_penalty=0.0,
-          presence_penalty=0.0
-        )
-
-    except requests.exceptions.RequestException as e:
-        if isinstance(e, requests.exceptions.HTTPError) and e.response.status_code == 429:
-            # Handle rate limit error
-            print('Rate limit exceeded. Waiting for one minute...')
-            time.sleep(5)
-        else:
-            # Handle other types of errors
-            print(f'Request error: {e}')
-            raise
-
-    #output_text = response['choices'][-1]['text']
-    output_text = "hii"
-    return output_text
 
 
 if __name__ == '__main__':
