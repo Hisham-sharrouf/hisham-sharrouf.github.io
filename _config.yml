@@ -62,6 +62,7 @@ author:
   name   : "Hisham sharrouf"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "I am a data science and artificial intelligence professional with a passion for using technology to drive innovation and solve complex problems, while also considering the ethical implications of AI."
+  location : "France"
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
