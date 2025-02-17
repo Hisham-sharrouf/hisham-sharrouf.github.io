@@ -47,4 +47,4 @@ I specialize in creating and deploying machine learning models to enhance proces
 
 - **Email:** hisham.sharrouf.fr@gmail.com
 - **Phone:** +33 650165121
-- **LinkedIn:** [linkedin.com/in/hisham-sharrouf](https://www.linkedin.com/in/hisham-sharrouf/)
+- **LinkedIn:** [hisham-sharrouf](https://www.linkedin.com/in/hisham-sharrouf/)
