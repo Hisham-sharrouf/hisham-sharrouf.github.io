@@ -38,6 +38,9 @@ I specialize in creating and deploying machine learning models to enhance proces
 
 - **Bachelor's in Data Science** | Lebanese University (2018)
   - Machine Learning, Advanced Data Analytics, Social Network Analysis, Big Data, Business Analytics, Advanced Web Development
+ 
+## Certifications
+- **Machine learning engineer** [Certificate](https://www.credly.com/badges/4f5f20fc-df93-4691-8d22-a5da665fff3f/linked_in?t=rh4swg)
 
 
 ## Contact
