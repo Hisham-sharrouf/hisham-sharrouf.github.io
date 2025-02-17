@@ -1,8 +1,47 @@
 ---
+title: "About Me"
 permalink: /about/
-title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+## Bio
+
+I am a Senior Data Scientist with a passion for developing innovative AI solutions that drive business value.
+I specialize in creating and deploying machine learning models to enhance process efficiency and product quality. Based in Saint-Étienne, France, I thrive on transforming complex data into actionable insights.
+
+## Skills
+
+- **Programming Languages:** Python, SQL, SAS, R
+- **Machine Learning Frameworks:** PyTorch, TensorFlow
+- **Data Visualization Tools:** Matplotlib, Seaborn, Tableau
+- **Big Data Technologies:** Apache Spark, Hadoop
+- **Cloud Platforms:** AWS, Azure
+- **Containerization and Orchestration:** Docker, Kubernetes
+- **Version Control Systems:** Git
+- **Operating Systems:** Linux
+
+## Professional Background
+
+- **Senior Data Scientist** @ Liaison R&D (2020–Present)
+  - Design and deployment of machine learning models for process optimization and product enhancement.
+  - Collaborate with cross-functional teams to integrate AI solutions into existing workflows.
+  - Mentor junior data scientists and conduct training sessions on advanced analytics techniques.
+
+
+## Education
+
+- **Master's in Information Technology** | Paris-Saclay University (2024)
+  - Specialized in Internet of things.
+
+- **Master's in Artificial Intelligence** | Saint Joseph University (2022)
+  - Specialized in machine learning and deep learning methodologies.
+
+- **Bachelor's in Data Science** | Lebanese University (2018)
+  - Machine Learning, Advanced Data Analytics, Social Network Analysis, Big Data, Business Analytics, Advanced Web Development
+
+
+## Contact
+
+- **Email:** hisham.sharrouf.fr@gmail.com
+- **Phone:** +33 650165121
+- **LinkedIn:** [linkedin.com/in/hisham-sharrouf](https://www.linkedin.com/in/hisham-sharrouf/)
