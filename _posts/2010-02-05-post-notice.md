@@ -1,4 +1,66 @@
 ---
+title: "Building an AI Agent in n8n with Telegram Integration"
+date: 2025-03-10
+categories:
+  - AI
+  - Automation
+tags:
+  - n8n
+  - Telegram Bot
+  - AI Agent
+  - Data Classification
+layout: post
+image: "/assets/images/ai-agent-n8n.jpg" # Path to an illustrative image
+---
+
+## 🚀 Automating Data Processing with n8n & AI  
+
+In this post, I’ll walk you through how I built an AI-powered agent in **n8n** that integrates with a **Telegram bot**. This agent processes different types of input, classifies the data, and sends it to the appropriate database.
+
+---
+
+### 🔹 **How It Works**
+1. **User sends a message** (text/audio/image) to the Telegram bot.  
+2. **n8n receives the data** using the Telegram node.  
+3. **AI Agent processes the data**:
+   - Converts **audio to text** (if applicable).  
+   - Classifies the content into predefined categories.  
+4. **Data is sent to the corresponding database** based on classification.  
+
+---
+
+### 🔹 **Tech Stack Used**
+✅ **n8n** – Workflow automation  
+✅ **Telegram Bot API** – Receiving user inputs  
+✅ **AI Model (LLM or NLP-based)** – Processing & classification  
+✅ **Databases (e.g., PostgreSQL, Firebase, Airtable, etc.)** – Storing processed data  
+
+---
+
+### 🛠 **Implementation Details**
+#### **1️⃣ Setting Up the Telegram Bot**
+- Create a bot using [@BotFather](https://t.me/BotFather).
+- Obtain the API Token and integrate it with n8n.
+
+#### **2️⃣ Configuring n8n Workflow**
+- Use the **Telegram Trigger Node** to listen for messages.  
+- Process the data using an **AI Model (OpenAI, Hugging Face, or local ML models).**  
+- Classify text/audio into categories using an NLP model.  
+
+#### **3️⃣ Storing Data in the Right Database**
+- If the message is **text-based**, store it in a structured text database.  
+- If it’s **an audio message**, transcribe it before classification.  
+- Store the classified data into the appropriate database (e.g., Firebase, PostgreSQL).  
+
+---
+
+### 🎯 **Example Workflow Diagram**  
+Here's a simplified diagram of the AI workflow:  
+
+
+
+
+---
 title: "TECH&FEST"
 date: 2025-02-06
 categories:
@@ -8,3 +70,4 @@ tags:
   - Post Formats
 link: https://www.linkedin.com/posts/liaison-r-d_techandfest-liaisonrd-innovation-activity-7292853560852029440-1s40?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9sxZEB59JfwRGh-FrcYRfZ8HgcWwIwoCI
 ---
+
