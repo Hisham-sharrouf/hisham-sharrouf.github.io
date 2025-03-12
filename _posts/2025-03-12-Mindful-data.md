@@ -1,3 +1,4 @@
+---
 title: "Introducing Mindful Data: A Multifunctional Text Processing Tool"
 date: 2025-03-12
 categories:
